@@ -4,7 +4,7 @@ pipeline {
         stage('Example Build') {
             agent any 
             steps {
-                echo 'Hello, Maven'
+                echo 'Hello, world'
             }
         }
         stage('Example Test') {
