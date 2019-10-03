@@ -8,7 +8,7 @@ pipeline {
             }
         }
         stage('Example Test') {
-            agent { Node1 'stage' } 
+            agent { Node1 { label 'stage' } }
             steps {
                 echo 'Hello, JDK'
             }
