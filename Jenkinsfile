@@ -8,7 +8,7 @@ pipeline {
             }
         }
         stage('Example Test') {
-            agent any
+            agent {label 'stage'}
             steps {
                 echo 'Hello, JDK'
             }
